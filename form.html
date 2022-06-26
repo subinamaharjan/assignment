@@ -1,0 +1,60 @@
+<html>
+    <head></head>
+    <title>User Form</title>
+    <body>
+        <form action ="process.php" method="POST">
+            <table border ="1" cellspacing="1">
+                <tr>
+                    <th colspan="2">User Form</th>
+                </tr>
+                <tr>
+                    <td>Enter Name</td>
+                    <td><input type="text" name="name"/></td>
+                </tr>
+                <td>Enter password</td>
+                <td><input type="password" name="password"/></td>
+                </tr>
+                <tr>
+                    <td>Enter address</td>
+                    <td><input type="text" name="add"/></td>
+                </tr>
+                <tr>
+                    <td>select games</td>
+                    <td>
+                        <input type="checkbox" name="games" value="hoc"/>Hockey<br>
+                        <input type="checkbox" name="games" value="cri"/>Cricket<br>
+                        <input type="checkbox" name="games" value="ball"/>Football<br>
+                        <input type="checkbox" name="games" value="bad"/>Badminton<br>
+                    </td>
+                </tr>
+                <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="male"/>male
+                <input type="radio" name="gender" value="female"/>female
+            </td>
+            </tr>
+            <tr>
+                <td>select your age</td>
+                <td><select name="age">
+                    <option>select</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan ="2" align = "center">
+                    <input type="file" name="file"/>
+                </td>
+            </tr>
+            <tr>
+                <td align ="center" colspan="2">
+                    <input type ="button" name="click" value="click me">
+                    <input type="reset" name="reset" value="Reset">
+                    <input type="Submit" name="submit" value="Submit Form">
+                </td>
+            </tr>
+            </table>
+        </form>
+    </body>
+</html>
